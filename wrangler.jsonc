@@ -1,0 +1,28 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "resume-mcp-server-fresh",
+	"main": "src/index.ts",
+	"compatibility_date": "2024-11-11",
+	"migrations": [
+		{
+			"new_sqlite_classes": [
+				"ResumeMCP"
+			],
+			"tag": "v1"
+		}
+	],
+	"durable_objects": {
+		"bindings": [
+			{
+				"class_name": "ResumeMCP",
+				"name": "MCP_OBJECT"
+			}
+		]
+	},
+	"observability": {
+		"enabled": true
+	},
+	"vars": {
+		"SERVER_URL": "https://resume-mcp-server-fresh.your-subdomain.workers.dev"
+	}
+}

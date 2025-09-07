@@ -1,0 +1,25 @@
+{
+	"name": "resume-mcp-server-fresh",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"test": "vitest",
+		"cf-typegen": "wrangler types"
+	},
+	"devDependencies": {
+		"@cloudflare/vitest-pool-workers": "^0.8.19",
+		"@cloudflare/workers-types": "^4.20250906.0",
+		"typescript": "^5.5.2",
+		"vitest": "~3.2.0",
+		"wrangler": "^4.34.0"
+	},
+	"dependencies": {
+		"@modelcontextprotocol/sdk": "^1.7.0",
+		"agents": "^0.0.43",
+		"hono": "^4.7.4",
+		"zod": "^3.24.2"
+	}
+}
